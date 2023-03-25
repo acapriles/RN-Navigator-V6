@@ -2,7 +2,9 @@ import { useEffect } from 'react';
 import { Button, Text, TouchableOpacity, View } from 'react-native';
 import { DrawerScreenProps } from '@react-navigation/drawer';
 import { StackScreenProps } from '@react-navigation/stack';
-import { styles } from '../theme/appTheme';
+import { styles, colores } from '../theme/appTheme';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 
 interface Props extends DrawerScreenProps< any, any >{};
 
@@ -19,11 +21,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                     onPress={ () => navigation.toggleDrawer()  }
                 >
                     <Text>Menú</Text>
-                    {/* <Icon 
+                    <Icon 
                         name="menu-outline"
                         color={ colores.primary }
                         size={ 35 }
-                    /> */}
+                    />
                 </TouchableOpacity>
             )
         })
@@ -56,11 +58,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         nombre: 'Pedro'
                     }) }
                 >
-                    {/* <Icon 
+                    <Icon 
                         name="body-outline"
                         color="white"
                         size={ 35 }
-                    /> */}
+                    />
                     <Text style={ styles.botonGrandeTexto }>Pedro</Text>
                 </TouchableOpacity>
 
@@ -75,11 +77,11 @@ export const Pagina1Screen = ({ navigation }: Props) => {
                         nombre: 'Maria'
                     }) }
                 >
-                    {/* <Icon 
+                    <Icon 
                         name="woman-outline"
                         color="white"
                         size={ 35 }
-                    /> */}
+                    />
                     <Text style={ styles.botonGrandeTexto }>Maria</Text>
                 </TouchableOpacity>
 
